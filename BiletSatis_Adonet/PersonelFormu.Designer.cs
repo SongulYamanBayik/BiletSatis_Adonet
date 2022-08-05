@@ -1,7 +1,7 @@
 ﻿
 namespace BiletSatis_Adonet
 {
-    partial class Form1
+    partial class frmPersonel
     {
         /// <summary>
         /// Required designer variable.
@@ -43,16 +43,16 @@ namespace BiletSatis_Adonet
             this.lblTelefon = new System.Windows.Forms.Label();
             this.txtTelefon = new System.Windows.Forms.TextBox();
             this.lblGorevId = new System.Windows.Forms.Label();
-            this.txtGorevID = new System.Windows.Forms.TextBox();
             this.lblSehirID = new System.Windows.Forms.Label();
-            this.txtSehirID = new System.Windows.Forms.TextBox();
             this.btnListele = new System.Windows.Forms.Button();
             this.btnEkle = new System.Windows.Forms.Button();
             this.btnGuncelle = new System.Windows.Forms.Button();
             this.btnSil = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dtgPersonel = new System.Windows.Forms.DataGridView();
+            this.cmbGorev = new System.Windows.Forms.ComboBox();
+            this.cmbSehir = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgPersonel)).BeginInit();
             this.SuspendLayout();
             // 
             // txtPersonelID
@@ -170,13 +170,6 @@ namespace BiletSatis_Adonet
             this.lblGorevId.TabIndex = 15;
             this.lblGorevId.Text = "Görev Id:";
             // 
-            // txtGorevID
-            // 
-            this.txtGorevID.Location = new System.Drawing.Point(133, 332);
-            this.txtGorevID.Name = "txtGorevID";
-            this.txtGorevID.Size = new System.Drawing.Size(160, 20);
-            this.txtGorevID.TabIndex = 14;
-            // 
             // lblSehirID
             // 
             this.lblSehirID.AutoSize = true;
@@ -186,13 +179,6 @@ namespace BiletSatis_Adonet
             this.lblSehirID.TabIndex = 17;
             this.lblSehirID.Text = "Şehir Id:";
             // 
-            // txtSehirID
-            // 
-            this.txtSehirID.Location = new System.Drawing.Point(133, 374);
-            this.txtSehirID.Name = "txtSehirID";
-            this.txtSehirID.Size = new System.Drawing.Size(160, 20);
-            this.txtSehirID.TabIndex = 16;
-            // 
             // btnListele
             // 
             this.btnListele.Location = new System.Drawing.Point(342, 106);
@@ -201,6 +187,7 @@ namespace BiletSatis_Adonet
             this.btnListele.TabIndex = 18;
             this.btnListele.Text = "Listele";
             this.btnListele.UseVisualStyleBackColor = true;
+            this.btnListele.Click += new System.EventHandler(this.btnListele_Click);
             // 
             // btnEkle
             // 
@@ -210,6 +197,7 @@ namespace BiletSatis_Adonet
             this.btnEkle.TabIndex = 19;
             this.btnEkle.Text = "Ekle";
             this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // btnGuncelle
             // 
@@ -219,6 +207,7 @@ namespace BiletSatis_Adonet
             this.btnGuncelle.TabIndex = 20;
             this.btnGuncelle.Text = "Güncelle";
             this.btnGuncelle.UseVisualStyleBackColor = true;
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // btnSil
             // 
@@ -228,6 +217,7 @@ namespace BiletSatis_Adonet
             this.btnSil.TabIndex = 21;
             this.btnSil.Text = "Sil";
             this.btnSil.UseVisualStyleBackColor = true;
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // dateTimePicker1
             // 
@@ -236,29 +226,46 @@ namespace BiletSatis_Adonet
             this.dateTimePicker1.Size = new System.Drawing.Size(160, 20);
             this.dateTimePicker1.TabIndex = 22;
             // 
-            // dataGridView1
+            // dtgPersonel
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(479, 32);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(309, 362);
-            this.dataGridView1.TabIndex = 23;
+            this.dtgPersonel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgPersonel.Location = new System.Drawing.Point(479, 32);
+            this.dtgPersonel.Name = "dtgPersonel";
+            this.dtgPersonel.Size = new System.Drawing.Size(309, 362);
+            this.dtgPersonel.TabIndex = 23;
             // 
-            // Form1
+            // cmbGorev
+            // 
+            this.cmbGorev.FormattingEnabled = true;
+            this.cmbGorev.Location = new System.Drawing.Point(133, 332);
+            this.cmbGorev.Name = "cmbGorev";
+            this.cmbGorev.Size = new System.Drawing.Size(160, 21);
+            this.cmbGorev.TabIndex = 24;
+            this.cmbGorev.SelectedIndexChanged += new System.EventHandler(this.cmbGorev_SelectedIndexChanged);
+            // 
+            // cmbSehir
+            // 
+            this.cmbSehir.FormattingEnabled = true;
+            this.cmbSehir.Location = new System.Drawing.Point(133, 368);
+            this.cmbSehir.Name = "cmbSehir";
+            this.cmbSehir.Size = new System.Drawing.Size(160, 21);
+            this.cmbSehir.TabIndex = 25;
+            // 
+            // frmPersonel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.cmbSehir);
+            this.Controls.Add(this.cmbGorev);
+            this.Controls.Add(this.dtgPersonel);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.btnSil);
             this.Controls.Add(this.btnGuncelle);
             this.Controls.Add(this.btnEkle);
             this.Controls.Add(this.btnListele);
             this.Controls.Add(this.lblSehirID);
-            this.Controls.Add(this.txtSehirID);
             this.Controls.Add(this.lblGorevId);
-            this.Controls.Add(this.txtGorevID);
             this.Controls.Add(this.lblTelefon);
             this.Controls.Add(this.txtTelefon);
             this.Controls.Add(this.lblDogumTarihi);
@@ -273,9 +280,10 @@ namespace BiletSatis_Adonet
             this.Controls.Add(this.lblpersonelID);
             this.Controls.Add(this.txtPersonelID);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Name = "Form1";
-            this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Name = "frmPersonel";
+            this.Text = "Personel Formu";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgPersonel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -297,15 +305,15 @@ namespace BiletSatis_Adonet
         private System.Windows.Forms.Label lblTelefon;
         private System.Windows.Forms.TextBox txtTelefon;
         private System.Windows.Forms.Label lblGorevId;
-        private System.Windows.Forms.TextBox txtGorevID;
         private System.Windows.Forms.Label lblSehirID;
-        private System.Windows.Forms.TextBox txtSehirID;
         private System.Windows.Forms.Button btnListele;
         private System.Windows.Forms.Button btnEkle;
         private System.Windows.Forms.Button btnGuncelle;
         private System.Windows.Forms.Button btnSil;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgPersonel;
+        private System.Windows.Forms.ComboBox cmbGorev;
+        private System.Windows.Forms.ComboBox cmbSehir;
     }
 }
 
