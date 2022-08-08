@@ -46,6 +46,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cinsiyet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cinsiyet.Designer.cs">
+      <DependentUpon>Cinsiyet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guzergah.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guzergah.Designer.cs">
+      <DependentUpon>Guzergah.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KisiselBilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KisiselBilgi.Designer.cs">
+      <DependentUpon>KisiselBilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Otobus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Otobus.Designer.cs">
+      <DependentUpon>Otobus.cs</DependentUpon>
+    </Compile>
     <Compile Include="PersonelFormu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +78,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cinsiyet.resx">
+      <DependentUpon>Cinsiyet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guzergah.resx">
+      <DependentUpon>Guzergah.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KisiselBilgi.resx">
+      <DependentUpon>KisiselBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Otobus.resx">
+      <DependentUpon>Otobus.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PersonelFormu.resx">
       <DependentUpon>PersonelFormu.cs</DependentUpon>
     </EmbeddedResource>

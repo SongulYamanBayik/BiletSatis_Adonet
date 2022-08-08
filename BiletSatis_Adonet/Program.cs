@@ -16,7 +16,7 @@ namespace BiletSatis_Adonet
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmPersonel());
+            Application.Run(new Otobus());
         }
     }
 }
