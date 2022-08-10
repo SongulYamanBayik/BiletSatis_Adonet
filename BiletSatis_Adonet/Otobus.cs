@@ -16,12 +16,27 @@ namespace BiletSatis_Adonet
         {
             InitializeComponent();
         }
-       
-        Cinsiyet Cinsiyet = new Cinsiyet();
+        static public string secilenCinsiyet = "";
+
         public void btn1_Click(object sender, EventArgs e)
         {
-            
-            Cinsiyet.Show();
+            Cinsiyet Cinsiyet = new Cinsiyet();
+            Cinsiyet.ShowDialog();
+            if (secilenCinsiyet=="Kadın")
+            {
+                btn1.BackColor = Color.Pink;
+            }
+            else
+            {
+                btn1.BackColor = Color.Blue;
+            }
+            KisiselBilgi kisiselBilgi = new KisiselBilgi();
+            kisiselBilgi.ShowDialog();
+        }
+
+        private void Otobus_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

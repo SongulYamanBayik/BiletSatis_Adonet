@@ -468,6 +468,7 @@ namespace BiletSatis_Adonet
             this.Controls.Add(this.btn2);
             this.Name = "Otobus";
             this.Text = "Otobus";
+            this.Load += new System.EventHandler(this.Otobus_Load);
             this.ResumeLayout(false);
 
         }
@@ -475,7 +476,6 @@ namespace BiletSatis_Adonet
         #endregion
 
         private System.Windows.Forms.Button btn2;
-        private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.Button btn3;
         private System.Windows.Forms.Button btn5;
         private System.Windows.Forms.Button btn4;
@@ -513,5 +513,6 @@ namespace BiletSatis_Adonet
         private System.Windows.Forms.Button btn37;
         private System.Windows.Forms.Button btn38;
         private System.Windows.Forms.Button btn39;
+        public System.Windows.Forms.Button btn1;
     }
 }

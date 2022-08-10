@@ -32,5 +32,10 @@ namespace BiletSatis_Adonet
             connection.Close();
             MessageBox.Show("Bilgileriniz başarılı bir şekilde eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void KisiselBilgi_Load(object sender, EventArgs e)
+        {
+            txtCinsiyet.Text = Otobus.secilenCinsiyet;
+        }
     }
 }

@@ -82,9 +82,8 @@ namespace BiletSatis_Adonet
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox cmbCinsiyet;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnDevam;
+        public System.Windows.Forms.ComboBox cmbCinsiyet;
     }
 }

@@ -10,22 +10,22 @@ using System.Windows.Forms;
 
 namespace BiletSatis_Adonet
 {
-    public partial class Cinsiyet : Form
+    public partial class Navigation2 : Form
     {
-        public Cinsiyet()
+        public Navigation2()
         {
             InitializeComponent();
         }
-
-        private void btnDevam_Click(object sender, EventArgs e)
+        public string kullaniciAdi;
+        private void Navigation2_Load(object sender, EventArgs e)
         {
-            Otobus.secilenCinsiyet = cmbCinsiyet.SelectedItem.ToString();
-            this.Close();
+            label1.Text = kullaniciAdi;
         }
 
-        public void cmbCinsiyet_SelectedValueChanged(object sender, EventArgs e)
+        private void btnBilet_Click(object sender, EventArgs e)
         {
-            
+            Otobus otobus = new Otobus();
+            otobus.ShowDialog();
         }
     }
 }

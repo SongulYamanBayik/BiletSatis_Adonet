@@ -92,6 +92,7 @@ namespace BiletSatis_Adonet
             // 
             // txtTCNo
             // 
+            this.txtTCNo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.txtTCNo.Location = new System.Drawing.Point(125, 146);
             this.txtTCNo.Name = "txtTCNo";
             this.txtTCNo.Size = new System.Drawing.Size(124, 20);
@@ -150,6 +151,7 @@ namespace BiletSatis_Adonet
             this.Controls.Add(this.label1);
             this.Name = "KisiselBilgi";
             this.Text = "KisiselBilgi";
+            this.Load += new System.EventHandler(this.KisiselBilgi_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,12 +163,12 @@ namespace BiletSatis_Adonet
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtSoyadi;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtCinsiyet;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtTCNo;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox TxtTelefon;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnKaydet;
+        public System.Windows.Forms.TextBox txtCinsiyet;
+        private System.Windows.Forms.TextBox txtTCNo;
     }
 }
