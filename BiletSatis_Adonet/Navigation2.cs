@@ -24,8 +24,8 @@ namespace BiletSatis_Adonet
 
         private void btnBilet_Click(object sender, EventArgs e)
         {
-            Otobus otobus = new Otobus();
-            otobus.ShowDialog();
+            SeferSorgula seferSorgula = new SeferSorgula();
+            seferSorgula.ShowDialog();
         }
     }
 }

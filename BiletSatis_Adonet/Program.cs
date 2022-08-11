@@ -16,7 +16,7 @@ namespace BiletSatis_Adonet
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SeferKayit());
+            Application.Run(new Login());
         }
     }
 }

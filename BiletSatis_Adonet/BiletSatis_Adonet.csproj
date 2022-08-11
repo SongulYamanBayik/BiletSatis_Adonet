@@ -108,11 +108,11 @@
     <Compile Include="SeferKayit.Designer.cs">
       <DependentUpon>SeferKayit.cs</DependentUpon>
     </Compile>
-    <Compile Include="UcretKayit.cs">
+    <Compile Include="SeferSorgula.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UcretKayit.Designer.cs">
-      <DependentUpon>UcretKayit.cs</DependentUpon>
+    <Compile Include="SeferSorgula.Designer.cs">
+      <DependentUpon>SeferSorgula.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -153,8 +153,8 @@
     <EmbeddedResource Include="SeferKayit.resx">
       <DependentUpon>SeferKayit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UcretKayit.resx">
-      <DependentUpon>UcretKayit.cs</DependentUpon>
+    <EmbeddedResource Include="SeferSorgula.resx">
+      <DependentUpon>SeferSorgula.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

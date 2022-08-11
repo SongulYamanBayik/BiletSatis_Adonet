@@ -21,7 +21,7 @@ namespace BiletSatis_Adonet
 
         void Listele()
         {
-            SqlCommand sqlCommand = new SqlCommand("select * from TblSeferler", connection);
+            SqlCommand sqlCommand = new SqlCommand("select g.ID, g.GuzergahAdi, o.Plaka, s.KalkisTarih, s.KalkisSaat, s.VarisTarih, s.VarisSaat, s.Ucret from TblSeferler as s inner join TblGuzergah as g on s.GuzergahID=g.ID inner join TblOtobus as o on s.OtobusID=o.ID", connection);
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand);
             DataTable dataTable = new DataTable();
             sqlDataAdapter.Fill(dataTable);
@@ -38,7 +38,7 @@ namespace BiletSatis_Adonet
             cmbGuzergah.DataSource = dataTable;
 
 
-            SqlCommand sqlCommand1 = new SqlCommand("select * from TblOtobus", connection);
+            SqlCommand sqlCommand1 = new SqlCommand("select * from TblOtobus where Durum=1", connection);
             SqlDataAdapter sqlDataAdapter1 = new SqlDataAdapter(sqlCommand1);
             DataTable dataTable1 = new DataTable();
             sqlDataAdapter1.Fill(dataTable1);
@@ -114,5 +114,7 @@ namespace BiletSatis_Adonet
             txtVarisSaat.Text = dtgSeferler.Rows[secilen].Cells[6].Value.ToString();
             txtUcret.Text = dtgSeferler.Rows[secilen].Cells[7].Value.ToString();
         }
+
+       
     }
 }

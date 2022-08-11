@@ -29,7 +29,8 @@ namespace BiletSatis_Adonet
 
             return dataTable;
         }
-        private List<string> araduraklariListele() {
+        private List<string> araduraklariListele()
+        {
 
             List<string> Items = new List<string>();
 
@@ -107,86 +108,87 @@ namespace BiletSatis_Adonet
                 // başlangıç şehir ile bitiş şehir aynı olamaz.
                 // araduraklar başlangıç şehir ve bitiş şehir ile aynı olamaz.
                 //( bu kontolü combobox change eventinda kontrol edebilir miyiz ? )
-                List<string> araDuraklar = araduraklariListele();
+                //    List<string> araDuraklar = araduraklariListele();
 
-                UcretKayit ucretKayit = new UcretKayit();
-                Label lbl1 = new Label();
-                lbl1.Left = 50;
-                lbl1.Top = 50;
-
-
-                lbl1.Text = baslangıcSehir + " - " + bitisSehir + " arası ";
-                lbl1.AutoSize = true;
-
-                Label lbl2 = new Label();
-                lbl2.Left = 250;
-                lbl2.Top = 30;
+                //    SeferSorgula ucretKayit = new SeferSorgula();
+                //    Label lbl1 = new Label();
+                //    lbl1.Left = 50;
+                //    lbl1.Top = 50;
 
 
-                lbl2.Text = "Ücret";
-                lbl2.AutoSize = true;
+                //    lbl1.Text = baslangıcSehir + " - " + bitisSehir + " arası ";
+                //    lbl1.AutoSize = true;
 
-                Label lbl3 = new Label();
-                lbl3.Left = 370;
-                lbl3.Top = 30;
-
-
-                lbl3.Text = "Tarih";
-                lbl3.AutoSize = true;
-
-                Label lbl4 = new Label();
-                lbl4.Left = 600;
-                lbl4.Top = 30;
+                //    Label lbl2 = new Label();
+                //    lbl2.Left = 250;
+                //    lbl2.Top = 30;
 
 
-                lbl4.Text = "saat";
-                lbl4.AutoSize = true;
+                //    lbl2.Text = "Ücret";
+                //    lbl2.AutoSize = true;
 
-                TextBox txt1 = new TextBox();
-                txt1.Name = "txtbasBitUcret";
-                txt1.Left = 250;
-                txt1.Top = 50;
-
-
-                DateTimePicker dateTimePicker1 = new DateTimePicker();
-                dateTimePicker1.Name = "dtpbasBitTarih";
-                dateTimePicker1.Left = 370;
-                dateTimePicker1.Top = 50;
-
-                TextBox txt2 = new TextBox();
-                txt2.Name = "txtbasBitSaat";
-                txt2.Left = 600;
-                txt2.Top = 50;
-
-                ucretKayit.Controls.Add(lbl1);
-                ucretKayit.Controls.Add(lbl2);
-                ucretKayit.Controls.Add(lbl3);
-                ucretKayit.Controls.Add(lbl4);
-
-                ucretKayit.Controls.Add(txt1);
-                ucretKayit.Controls.Add(dateTimePicker1);
-                ucretKayit.Controls.Add(txt2);
+                //    Label lbl3 = new Label();
+                //    lbl3.Left = 370;
+                //    lbl3.Top = 30;
 
 
+                //    lbl3.Text = "Tarih";
+                //    lbl3.AutoSize = true;
+
+                //    Label lbl4 = new Label();
+                //    lbl4.Left = 600;
+                //    lbl4.Top = 30;
+
+
+                //    lbl4.Text = "saat";
+                //    lbl4.AutoSize = true;
+
+                //    TextBox txt1 = new TextBox();
+                //    txt1.Name = "txtbasBitUcret";
+                //    txt1.Left = 250;
+                //    txt1.Top = 50;
+
+
+                //    DateTimePicker dateTimePicker1 = new DateTimePicker();
+                //    dateTimePicker1.Name = "dtpbasBitTarih";
+                //    dateTimePicker1.Left = 370;
+                //    dateTimePicker1.Top = 50;
+
+                //    TextBox txt2 = new TextBox();
+                //    txt2.Name = "txtbasBitSaat";
+                //    txt2.Left = 600;
+                //    txt2.Top = 50;
+
+                //    ucretKayit.Controls.Add(lbl1);
+                //    ucretKayit.Controls.Add(lbl2);
+                //    ucretKayit.Controls.Add(lbl3);
+                //    ucretKayit.Controls.Add(lbl4);
+
+                //    ucretKayit.Controls.Add(txt1);
+                //    ucretKayit.Controls.Add(dateTimePicker1);
+                //    ucretKayit.Controls.Add(txt2);
 
 
 
-               
-
-                this.Hide();
-                ucretKayit.ShowDialog();
 
 
+
+
+                //    this.Hide();
+                //    ucretKayit.ShowDialog();
+
+
+
+                //}
+                //else
+                //{
+                //    MessageBox.Show("Güzergah Adı alanı boş bırakılamaz!");
+
+                //}
 
             }
-            else
-            {
-                MessageBox.Show("Güzergah Adı alanı boş bırakılamaz!");
 
-            }
 
         }
-
-      
     }
 }
