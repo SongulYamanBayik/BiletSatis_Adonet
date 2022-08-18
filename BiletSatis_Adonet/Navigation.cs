@@ -45,5 +45,11 @@ namespace BiletSatis_Adonet
             OtobusKayit otobusKayit = new OtobusKayit();
             otobusKayit.ShowDialog();
         }
+
+        private void btnCikis_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.ShowDialog();
+        }
     }
 }

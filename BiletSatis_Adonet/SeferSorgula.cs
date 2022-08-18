@@ -71,5 +71,17 @@ namespace BiletSatis_Adonet
             comboBox2.DataSource = dataTable1;
             
         }
+
+        
+
+        private void btnBilet_Click(object sender, EventArgs e)
+        {
+            Otobus otobus = new Otobus();
+            otobus.label1.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            otobus.label2.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            otobus.label3.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            otobus.label4.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            otobus.ShowDialog();
+        }
     }
 }

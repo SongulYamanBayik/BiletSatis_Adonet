@@ -27,5 +27,11 @@ namespace BiletSatis_Adonet
             SeferSorgula seferSorgula = new SeferSorgula();
             seferSorgula.ShowDialog();
         }
+
+        private void btnCikis_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.ShowDialog();
+        }
     }
 }

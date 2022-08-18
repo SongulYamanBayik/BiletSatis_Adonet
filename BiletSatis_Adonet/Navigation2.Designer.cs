@@ -52,6 +52,7 @@ namespace BiletSatis_Adonet
             this.btnCikis.TabIndex = 8;
             this.btnCikis.Text = "Çıkış YAp";
             this.btnCikis.UseVisualStyleBackColor = false;
+            this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
             // 
             // btnBilet
             // 

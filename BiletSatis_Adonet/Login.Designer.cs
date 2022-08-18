@@ -42,6 +42,7 @@ namespace BiletSatis_Adonet
             this.txtKullanici.Name = "txtKullanici";
             this.txtKullanici.Size = new System.Drawing.Size(124, 20);
             this.txtKullanici.TabIndex = 0;
+            this.txtKullanici.TextChanged += new System.EventHandler(this.txtKullanici_TextChanged);
             // 
             // label1
             // 
@@ -60,7 +61,6 @@ namespace BiletSatis_Adonet
             this.label2.Size = new System.Drawing.Size(31, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Şifre:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtSifre
             // 

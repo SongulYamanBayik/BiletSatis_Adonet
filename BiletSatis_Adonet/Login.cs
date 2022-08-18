@@ -18,10 +18,6 @@ namespace BiletSatis_Adonet
             InitializeComponent();
         }
         SqlConnection connection = new SqlConnection("Data Source=.;Initial Catalog=DB_BiletSatis;Integrated Security=True");
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnGiris_Click(object sender, EventArgs e)
         {
@@ -34,8 +30,6 @@ namespace BiletSatis_Adonet
 
             if (sqlDataReader.Read())
             {
-
-
                 if (sqlDataReader[1].ToString() == "1" || sqlDataReader[1].ToString() == "2")
                 {
 
@@ -61,6 +55,14 @@ namespace BiletSatis_Adonet
             }
             connection.Close();
 
+        }
+
+        
+
+        private void txtKullanici_TextChanged(object sender, EventArgs e)
+        {
+            txtKullanici.Text = txtKullanici.Text.ToUpper();
+            txtKullanici.SelectionStart = txtKullanici.Text.Length;
         }
     }
 }

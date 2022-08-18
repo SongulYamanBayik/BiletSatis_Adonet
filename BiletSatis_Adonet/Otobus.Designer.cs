@@ -68,11 +68,19 @@ namespace BiletSatis_Adonet
             this.btn37 = new System.Windows.Forms.Button();
             this.btn38 = new System.Windows.Forms.Button();
             this.btn39 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn2
             // 
-            this.btn2.Location = new System.Drawing.Point(102, 69);
+            this.btn2.Location = new System.Drawing.Point(102, 80);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(31, 26);
             this.btn2.TabIndex = 0;
@@ -81,7 +89,7 @@ namespace BiletSatis_Adonet
             // 
             // btn1
             // 
-            this.btn1.Location = new System.Drawing.Point(102, 37);
+            this.btn1.Location = new System.Drawing.Point(102, 48);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(31, 26);
             this.btn1.TabIndex = 1;
@@ -91,7 +99,7 @@ namespace BiletSatis_Adonet
             // 
             // btn3
             // 
-            this.btn3.Location = new System.Drawing.Point(100, 133);
+            this.btn3.Location = new System.Drawing.Point(100, 144);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(31, 26);
             this.btn3.TabIndex = 2;
@@ -100,7 +108,7 @@ namespace BiletSatis_Adonet
             // 
             // btn5
             // 
-            this.btn5.Location = new System.Drawing.Point(139, 69);
+            this.btn5.Location = new System.Drawing.Point(139, 80);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(31, 26);
             this.btn5.TabIndex = 3;
@@ -109,7 +117,7 @@ namespace BiletSatis_Adonet
             // 
             // btn4
             // 
-            this.btn4.Location = new System.Drawing.Point(139, 37);
+            this.btn4.Location = new System.Drawing.Point(139, 48);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(31, 26);
             this.btn4.TabIndex = 4;
@@ -118,7 +126,7 @@ namespace BiletSatis_Adonet
             // 
             // btn6
             // 
-            this.btn6.Location = new System.Drawing.Point(137, 133);
+            this.btn6.Location = new System.Drawing.Point(137, 144);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(31, 26);
             this.btn6.TabIndex = 5;
@@ -127,7 +135,7 @@ namespace BiletSatis_Adonet
             // 
             // btn8
             // 
-            this.btn8.Location = new System.Drawing.Point(176, 69);
+            this.btn8.Location = new System.Drawing.Point(176, 80);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(31, 26);
             this.btn8.TabIndex = 6;
@@ -136,7 +144,7 @@ namespace BiletSatis_Adonet
             // 
             // btn7
             // 
-            this.btn7.Location = new System.Drawing.Point(176, 37);
+            this.btn7.Location = new System.Drawing.Point(176, 48);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(31, 26);
             this.btn7.TabIndex = 7;
@@ -145,7 +153,7 @@ namespace BiletSatis_Adonet
             // 
             // btn9
             // 
-            this.btn9.Location = new System.Drawing.Point(174, 133);
+            this.btn9.Location = new System.Drawing.Point(174, 144);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(31, 26);
             this.btn9.TabIndex = 8;
@@ -154,7 +162,7 @@ namespace BiletSatis_Adonet
             // 
             // btn11
             // 
-            this.btn11.Location = new System.Drawing.Point(213, 69);
+            this.btn11.Location = new System.Drawing.Point(213, 80);
             this.btn11.Name = "btn11";
             this.btn11.Size = new System.Drawing.Size(31, 26);
             this.btn11.TabIndex = 9;
@@ -163,7 +171,7 @@ namespace BiletSatis_Adonet
             // 
             // btn10
             // 
-            this.btn10.Location = new System.Drawing.Point(213, 37);
+            this.btn10.Location = new System.Drawing.Point(213, 48);
             this.btn10.Name = "btn10";
             this.btn10.Size = new System.Drawing.Size(31, 26);
             this.btn10.TabIndex = 10;
@@ -172,7 +180,7 @@ namespace BiletSatis_Adonet
             // 
             // btn12
             // 
-            this.btn12.Location = new System.Drawing.Point(211, 133);
+            this.btn12.Location = new System.Drawing.Point(211, 144);
             this.btn12.Name = "btn12";
             this.btn12.Size = new System.Drawing.Size(31, 26);
             this.btn12.TabIndex = 11;
@@ -181,7 +189,7 @@ namespace BiletSatis_Adonet
             // 
             // btn14
             // 
-            this.btn14.Location = new System.Drawing.Point(250, 69);
+            this.btn14.Location = new System.Drawing.Point(250, 80);
             this.btn14.Name = "btn14";
             this.btn14.Size = new System.Drawing.Size(31, 26);
             this.btn14.TabIndex = 12;
@@ -190,7 +198,7 @@ namespace BiletSatis_Adonet
             // 
             // btn13
             // 
-            this.btn13.Location = new System.Drawing.Point(250, 37);
+            this.btn13.Location = new System.Drawing.Point(250, 48);
             this.btn13.Name = "btn13";
             this.btn13.Size = new System.Drawing.Size(31, 26);
             this.btn13.TabIndex = 13;
@@ -199,7 +207,7 @@ namespace BiletSatis_Adonet
             // 
             // btn15
             // 
-            this.btn15.Location = new System.Drawing.Point(248, 133);
+            this.btn15.Location = new System.Drawing.Point(248, 144);
             this.btn15.Name = "btn15";
             this.btn15.Size = new System.Drawing.Size(31, 26);
             this.btn15.TabIndex = 14;
@@ -208,7 +216,7 @@ namespace BiletSatis_Adonet
             // 
             // btn17
             // 
-            this.btn17.Location = new System.Drawing.Point(287, 69);
+            this.btn17.Location = new System.Drawing.Point(287, 80);
             this.btn17.Name = "btn17";
             this.btn17.Size = new System.Drawing.Size(31, 26);
             this.btn17.TabIndex = 15;
@@ -217,7 +225,7 @@ namespace BiletSatis_Adonet
             // 
             // btn16
             // 
-            this.btn16.Location = new System.Drawing.Point(287, 37);
+            this.btn16.Location = new System.Drawing.Point(287, 48);
             this.btn16.Name = "btn16";
             this.btn16.Size = new System.Drawing.Size(31, 26);
             this.btn16.TabIndex = 16;
@@ -226,7 +234,7 @@ namespace BiletSatis_Adonet
             // 
             // btn18
             // 
-            this.btn18.Location = new System.Drawing.Point(285, 133);
+            this.btn18.Location = new System.Drawing.Point(285, 144);
             this.btn18.Name = "btn18";
             this.btn18.Size = new System.Drawing.Size(31, 26);
             this.btn18.TabIndex = 17;
@@ -235,7 +243,7 @@ namespace BiletSatis_Adonet
             // 
             // btn20
             // 
-            this.btn20.Location = new System.Drawing.Point(324, 69);
+            this.btn20.Location = new System.Drawing.Point(324, 80);
             this.btn20.Name = "btn20";
             this.btn20.Size = new System.Drawing.Size(31, 26);
             this.btn20.TabIndex = 18;
@@ -244,7 +252,7 @@ namespace BiletSatis_Adonet
             // 
             // btn19
             // 
-            this.btn19.Location = new System.Drawing.Point(324, 37);
+            this.btn19.Location = new System.Drawing.Point(324, 48);
             this.btn19.Name = "btn19";
             this.btn19.Size = new System.Drawing.Size(31, 26);
             this.btn19.TabIndex = 19;
@@ -253,7 +261,7 @@ namespace BiletSatis_Adonet
             // 
             // btn21
             // 
-            this.btn21.Location = new System.Drawing.Point(322, 133);
+            this.btn21.Location = new System.Drawing.Point(322, 144);
             this.btn21.Name = "btn21";
             this.btn21.Size = new System.Drawing.Size(31, 26);
             this.btn21.TabIndex = 20;
@@ -262,7 +270,7 @@ namespace BiletSatis_Adonet
             // 
             // btn22
             // 
-            this.btn22.Location = new System.Drawing.Point(359, 133);
+            this.btn22.Location = new System.Drawing.Point(359, 144);
             this.btn22.Name = "btn22";
             this.btn22.Size = new System.Drawing.Size(31, 26);
             this.btn22.TabIndex = 21;
@@ -271,7 +279,7 @@ namespace BiletSatis_Adonet
             // 
             // btn23
             // 
-            this.btn23.Location = new System.Drawing.Point(396, 133);
+            this.btn23.Location = new System.Drawing.Point(396, 144);
             this.btn23.Name = "btn23";
             this.btn23.Size = new System.Drawing.Size(31, 26);
             this.btn23.TabIndex = 22;
@@ -280,7 +288,7 @@ namespace BiletSatis_Adonet
             // 
             // btn26
             // 
-            this.btn26.Location = new System.Drawing.Point(433, 133);
+            this.btn26.Location = new System.Drawing.Point(433, 144);
             this.btn26.Name = "btn26";
             this.btn26.Size = new System.Drawing.Size(31, 26);
             this.btn26.TabIndex = 23;
@@ -289,7 +297,7 @@ namespace BiletSatis_Adonet
             // 
             // btn24
             // 
-            this.btn24.Location = new System.Drawing.Point(435, 37);
+            this.btn24.Location = new System.Drawing.Point(435, 48);
             this.btn24.Name = "btn24";
             this.btn24.Size = new System.Drawing.Size(31, 26);
             this.btn24.TabIndex = 24;
@@ -298,7 +306,7 @@ namespace BiletSatis_Adonet
             // 
             // btn25
             // 
-            this.btn25.Location = new System.Drawing.Point(435, 69);
+            this.btn25.Location = new System.Drawing.Point(435, 80);
             this.btn25.Name = "btn25";
             this.btn25.Size = new System.Drawing.Size(31, 26);
             this.btn25.TabIndex = 25;
@@ -307,7 +315,7 @@ namespace BiletSatis_Adonet
             // 
             // btn27
             // 
-            this.btn27.Location = new System.Drawing.Point(472, 37);
+            this.btn27.Location = new System.Drawing.Point(472, 48);
             this.btn27.Name = "btn27";
             this.btn27.Size = new System.Drawing.Size(31, 26);
             this.btn27.TabIndex = 26;
@@ -316,7 +324,7 @@ namespace BiletSatis_Adonet
             // 
             // btn28
             // 
-            this.btn28.Location = new System.Drawing.Point(472, 69);
+            this.btn28.Location = new System.Drawing.Point(472, 80);
             this.btn28.Name = "btn28";
             this.btn28.Size = new System.Drawing.Size(31, 26);
             this.btn28.TabIndex = 27;
@@ -325,7 +333,7 @@ namespace BiletSatis_Adonet
             // 
             // btn29
             // 
-            this.btn29.Location = new System.Drawing.Point(470, 133);
+            this.btn29.Location = new System.Drawing.Point(470, 144);
             this.btn29.Name = "btn29";
             this.btn29.Size = new System.Drawing.Size(31, 26);
             this.btn29.TabIndex = 28;
@@ -334,7 +342,7 @@ namespace BiletSatis_Adonet
             // 
             // btn30
             // 
-            this.btn30.Location = new System.Drawing.Point(509, 37);
+            this.btn30.Location = new System.Drawing.Point(509, 48);
             this.btn30.Name = "btn30";
             this.btn30.Size = new System.Drawing.Size(31, 26);
             this.btn30.TabIndex = 29;
@@ -343,7 +351,7 @@ namespace BiletSatis_Adonet
             // 
             // btn31
             // 
-            this.btn31.Location = new System.Drawing.Point(509, 69);
+            this.btn31.Location = new System.Drawing.Point(509, 80);
             this.btn31.Name = "btn31";
             this.btn31.Size = new System.Drawing.Size(31, 26);
             this.btn31.TabIndex = 30;
@@ -352,7 +360,7 @@ namespace BiletSatis_Adonet
             // 
             // btn32
             // 
-            this.btn32.Location = new System.Drawing.Point(507, 133);
+            this.btn32.Location = new System.Drawing.Point(507, 144);
             this.btn32.Name = "btn32";
             this.btn32.Size = new System.Drawing.Size(31, 26);
             this.btn32.TabIndex = 31;
@@ -361,7 +369,7 @@ namespace BiletSatis_Adonet
             // 
             // btn33
             // 
-            this.btn33.Location = new System.Drawing.Point(546, 37);
+            this.btn33.Location = new System.Drawing.Point(546, 48);
             this.btn33.Name = "btn33";
             this.btn33.Size = new System.Drawing.Size(31, 26);
             this.btn33.TabIndex = 32;
@@ -370,7 +378,7 @@ namespace BiletSatis_Adonet
             // 
             // btn34
             // 
-            this.btn34.Location = new System.Drawing.Point(546, 69);
+            this.btn34.Location = new System.Drawing.Point(546, 80);
             this.btn34.Name = "btn34";
             this.btn34.Size = new System.Drawing.Size(31, 26);
             this.btn34.TabIndex = 33;
@@ -379,7 +387,7 @@ namespace BiletSatis_Adonet
             // 
             // btn35
             // 
-            this.btn35.Location = new System.Drawing.Point(544, 133);
+            this.btn35.Location = new System.Drawing.Point(544, 144);
             this.btn35.Name = "btn35";
             this.btn35.Size = new System.Drawing.Size(31, 26);
             this.btn35.TabIndex = 34;
@@ -388,7 +396,7 @@ namespace BiletSatis_Adonet
             // 
             // btn36
             // 
-            this.btn36.Location = new System.Drawing.Point(583, 37);
+            this.btn36.Location = new System.Drawing.Point(583, 48);
             this.btn36.Name = "btn36";
             this.btn36.Size = new System.Drawing.Size(31, 26);
             this.btn36.TabIndex = 35;
@@ -397,7 +405,7 @@ namespace BiletSatis_Adonet
             // 
             // btn37
             // 
-            this.btn37.Location = new System.Drawing.Point(583, 69);
+            this.btn37.Location = new System.Drawing.Point(583, 80);
             this.btn37.Name = "btn37";
             this.btn37.Size = new System.Drawing.Size(31, 26);
             this.btn37.TabIndex = 36;
@@ -406,7 +414,7 @@ namespace BiletSatis_Adonet
             // 
             // btn38
             // 
-            this.btn38.Location = new System.Drawing.Point(583, 101);
+            this.btn38.Location = new System.Drawing.Point(583, 112);
             this.btn38.Name = "btn38";
             this.btn38.Size = new System.Drawing.Size(31, 26);
             this.btn38.TabIndex = 37;
@@ -415,18 +423,98 @@ namespace BiletSatis_Adonet
             // 
             // btn39
             // 
-            this.btn39.Location = new System.Drawing.Point(583, 133);
+            this.btn39.Location = new System.Drawing.Point(583, 144);
             this.btn39.Name = "btn39";
             this.btn39.Size = new System.Drawing.Size(31, 26);
             this.btn39.TabIndex = 38;
             this.btn39.Text = "39";
             this.btn39.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(59, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 39;
+            this.label1.Text = "label1";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(192, 23);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 40;
+            this.label2.Text = "label2";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(316, 22);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 41;
+            this.label3.Text = "label3";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(457, 22);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.TabIndex = 42;
+            this.label4.Text = "label4";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(25, 23);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(37, 13);
+            this.label5.TabIndex = 43;
+            this.label5.Text = "Plaka:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(139, 22);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(56, 13);
+            this.label6.TabIndex = 44;
+            this.label6.Text = "Güzergah:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(282, 22);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(34, 13);
+            this.label7.TabIndex = 45;
+            this.label7.Text = "Tarih:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(428, 22);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(32, 13);
+            this.label8.TabIndex = 46;
+            this.label8.Text = "Saat:";
+            // 
             // Otobus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btn39);
             this.Controls.Add(this.btn38);
             this.Controls.Add(this.btn37);
@@ -470,6 +558,7 @@ namespace BiletSatis_Adonet
             this.Text = "Otobus";
             this.Load += new System.EventHandler(this.Otobus_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -514,5 +603,13 @@ namespace BiletSatis_Adonet
         private System.Windows.Forms.Button btn38;
         private System.Windows.Forms.Button btn39;
         public System.Windows.Forms.Button btn1;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }
