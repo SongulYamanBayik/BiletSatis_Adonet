@@ -49,6 +49,10 @@ namespace BiletSatis_Adonet
         private void btnCikis_Click(object sender, EventArgs e)
         {
             Login login = new Login();
+
+            this.Close();
+
+
             login.ShowDialog();
         }
     }

@@ -13,6 +13,7 @@ namespace BiletSatis_Adonet
 {
     public partial class SeferSorgula : Form
     {
+        public static int seferID = 0;
         public SeferSorgula()
         {
             InitializeComponent();
@@ -39,7 +40,7 @@ namespace BiletSatis_Adonet
             DateTime selectedDate = Convert.ToDateTime(dateTimePicker1.Value.ToString("dd MM yyyy"));
             if (now <= selectedDate)
             {
-                SqlCommand sqlCommand = new SqlCommand("select g.GuzergahAdi, o.Plaka, s.KalkisTarih, s.KalkisSaat, s.VarisTarih, s.VarisSaat, s.Ucret from TblSeferler as s inner join TblGuzergah as g on s.GuzergahID=g.ID inner join TblOtobus as o on s.OtobusID=o.ID where  KalkisTarih >= @p2 and [GuzergahID]= (select ID from TblGuzergah where GuzergahAdi like @p1)", connection);
+                SqlCommand sqlCommand = new SqlCommand("select  s.ID, g.GuzergahAdi, o.Plaka, s.KalkisTarih, s.KalkisSaat, s.VarisTarih, s.VarisSaat, s.Ucret from TblSeferler as s inner join TblGuzergah as g on s.GuzergahID=g.ID inner join TblOtobus as o on s.OtobusID=o.ID where  KalkisTarih >= @p2 and [GuzergahID]= (select ID from TblGuzergah where GuzergahAdi like @p1)", connection);
                 sqlCommand.Parameters.AddWithValue("@p1", a);
                 sqlCommand.Parameters.AddWithValue("@p2", now);
 
@@ -77,10 +78,11 @@ namespace BiletSatis_Adonet
         private void btnBilet_Click(object sender, EventArgs e)
         {
             Otobus otobus = new Otobus();
-            otobus.label1.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            otobus.label2.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            otobus.label3.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            otobus.label4.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            seferID =Convert.ToInt32( dataGridView1.CurrentRow.Cells[0].Value);
+            otobus.label1.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            otobus.label2.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            otobus.label3.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            otobus.label4.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
             otobus.ShowDialog();
         }
     }

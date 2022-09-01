@@ -33,13 +33,15 @@ namespace BiletSatis_Adonet
             this.label1 = new System.Windows.Forms.Label();
             this.txtSoyadi = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtCinsiyet = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtTCNo = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.TxtTelefon = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnKaydet = new System.Windows.Forms.Button();
+            this.cmbCinsiyet = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtKoltukNo = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtAdi
@@ -73,13 +75,6 @@ namespace BiletSatis_Adonet
             this.label2.Size = new System.Drawing.Size(42, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "Soyadı:";
-            // 
-            // txtCinsiyet
-            // 
-            this.txtCinsiyet.Location = new System.Drawing.Point(125, 110);
-            this.txtCinsiyet.Name = "txtCinsiyet";
-            this.txtCinsiyet.Size = new System.Drawing.Size(124, 20);
-            this.txtCinsiyet.TabIndex = 7;
             // 
             // label3
             // 
@@ -133,17 +128,48 @@ namespace BiletSatis_Adonet
             this.btnKaydet.UseVisualStyleBackColor = true;
             this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
+            // cmbCinsiyet
+            // 
+            this.cmbCinsiyet.FormattingEnabled = true;
+            this.cmbCinsiyet.Items.AddRange(new object[] {
+            "Kadın",
+            "Erkek"});
+            this.cmbCinsiyet.Location = new System.Drawing.Point(125, 113);
+            this.cmbCinsiyet.Name = "cmbCinsiyet";
+            this.cmbCinsiyet.Size = new System.Drawing.Size(121, 21);
+            this.cmbCinsiyet.TabIndex = 13;
+            this.cmbCinsiyet.SelectedIndexChanged += new System.EventHandler(this.cmbCinsiyet_SelectedIndexChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(50, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(60, 13);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Koltuk No: ";
+            // 
+            // txtKoltukNo
+            // 
+            this.txtKoltukNo.Location = new System.Drawing.Point(125, 6);
+            this.txtKoltukNo.Name = "txtKoltukNo";
+            this.txtKoltukNo.ReadOnly = true;
+            this.txtKoltukNo.Size = new System.Drawing.Size(124, 20);
+            this.txtKoltukNo.TabIndex = 15;
+            // 
             // KisiselBilgi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(341, 337);
+            this.Controls.Add(this.txtKoltukNo);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.cmbCinsiyet);
             this.Controls.Add(this.btnKaydet);
             this.Controls.Add(this.TxtTelefon);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtTCNo);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtCinsiyet);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtSoyadi);
             this.Controls.Add(this.label2);
@@ -168,7 +194,9 @@ namespace BiletSatis_Adonet
         private System.Windows.Forms.TextBox TxtTelefon;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnKaydet;
-        public System.Windows.Forms.TextBox txtCinsiyet;
         private System.Windows.Forms.TextBox txtTCNo;
+        private System.Windows.Forms.ComboBox cmbCinsiyet;
+        private System.Windows.Forms.Label label6;
+        public System.Windows.Forms.TextBox txtKoltukNo;
     }
 }
